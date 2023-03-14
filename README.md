@@ -24,6 +24,18 @@ Ajouter la localisation pour chaque post (adresse, ville, code, postale, lat, ln
 ***Frontend :*** Formater les adresses avec Google Places API
 
 > Utilisation de Google Places API
+
+
+```html
+<script async src="https://www.googletagmanager.com/gtag/js?id=SECRET_KEY"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'SECRET_KEY');
+</script>
+```
 # TODO V5
 
 ***Frontend :***
