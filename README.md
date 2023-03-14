@@ -25,6 +25,17 @@ Ajouter la localisation pour chaque post (adresse, ville, code, postale, lat, ln
 
 > Utilisation de Google Places API
 
+| Parameter | Type     |
+| :-------- | :------- |
+| `formatted_address` | `string` |
+| `street_number` | `string` |
+| `route` | `string` |
+| `city` | `string` |
+| `administrative_area_level_1` | `string` |
+| `administrative_area_level_1` | `string` |
+| `administrative_area_level_2` | `string` |
+| `country` | `string` |
+| `postal_code` | `string` |
 
 ```html
 <script async src="https://www.googletagmanager.com/gtag/js?id=SECRET_KEY"></script>
