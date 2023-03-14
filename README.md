@@ -11,11 +11,11 @@
 
 # TODO V3
 ## Frontend
-- création d'un post avec un formulaire (avec images). Utilisation du package react-dropzone
+- création d'un post via un formulaire (avec images).Il faut envoyer les données avec un FormData. Utilisation du package react-dropzone.
 
 # TODO V4
 ## Backend
-- ajouter la localisation pour chaque post (adresse, ville, code, postale, lat, lnt)
+- ajouter la localisation pour chaque post (adresse, ville, code, postale, lat, lng)
 ## Frontend
 - formater les adresse avec Google Places API
 

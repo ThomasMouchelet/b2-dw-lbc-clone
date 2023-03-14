@@ -12,15 +12,17 @@ const PostController = {
                 content,
             })
             await post.save();
-
-            const uploadFileInAws = await uploadOneFileInAws(req.files[0], post._id);
-            const uploadFile = new UploadFileModel({
-                ...uploadFileInAws,
-                post: post._id
-            });
-            await uploadFile.save();
-
-            post.uploadFiles.push(uploadFile);
+        
+            await Promise.all(req.files.map(async (file) => {
+                const uploadFileInAws = await uploadOneFileInAws(file, post._id);
+                const uploadFile = new UploadFileModel({
+                    ...uploadFileInAws,
+                    post: post._id
+                });
+                await uploadFile.save();
+                post.uploadFiles.push(uploadFile);
+            }))
+        
             await post.save();
 
             res.status(201).send(post);
