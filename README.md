@@ -8,12 +8,12 @@ Upload plusieurs images (promise.all)
 # TODO V2
 
 ***Frontend :***
-- create route single page post
-- show all images of post
+- Création d'une route pour affiche la single page du post
+- Afficher toutes les images sur la single page
 # TODO V3
 
 ***Frontend :***
-Création d'un post via un formulaire (avec images).Il faut envoyer les données avec un [FormData](https://developer.mozilla.org/en-US/docs/Web/API/FormData/FormData). 
+Création d'un post via un formulaire (avec images). Il faut envoyer les données avec un [FormData](https://developer.mozilla.org/en-US/docs/Web/API/FormData/FormData). 
 
 > Utilisation du package [react-dropzone](https://react-dropzone.js.org).
 # TODO V4
