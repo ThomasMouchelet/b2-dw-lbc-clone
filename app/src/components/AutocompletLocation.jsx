@@ -9,7 +9,7 @@ const AutocompleteInput = () => {
     useEffect(() => {
         console.log('useEffect');
         const script = document.createElement('script')
-        script.src = `https://maps.googleapis.com/maps/api/js?key=${apiKey}&libraries=places`
+        script.src = `https://maps.googleapis.com/maps/api/js?key=${apiKey}&libraries=places&language=fr`
         document.body.appendChild(script)
         script.async = true
         script.defer = true
@@ -30,12 +30,9 @@ const AutocompleteInput = () => {
 
   const handleScriptLoad = () => {
     console.log('handleScriptLoad');
-    const options = {
-      types: ['address']
-    };
+    
     autocompleteRef.current = new window.google.maps.places.Autocomplete(
-      document.getElementById('autocomplete-input'),
-      options
+      document.getElementById('autocomplete-input')
     );
     
     autocompleteRef.current.addListener('place_changed', handlePlaceSelect);

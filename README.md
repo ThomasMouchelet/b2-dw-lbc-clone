@@ -35,6 +35,8 @@ Ajouter la localisation pour chaque post (adresse, ville, code, postale, lat, ln
 | `administrative_area_level_2` | `string` |
 | `country` | `string` |
 | `postal_code` | `string` |
+| `lat` | `string` |
+| `lng` | `string` |
 
 
 # TODO V5
