@@ -14,27 +14,6 @@ const PostForm = () => {
         credentials.uploadFiles.forEach(file => {
             formData.append("photos", file)
         })
-
-
-
-
-        
-        // headers: { 'Content-Type': 'multipart/form-data' } 
-        
-
-
-        // formData.append("categorie[name]", credentials.category.name)
-        // formData.append("categorie[description]", credentials.category.description)
-
-        // {
-        //     name: "",
-        //     content: "",
-        //     categorie: {
-        //         name: "",
-        //         description: ""
-        //     }
-        // }
-        
     }
 
     const handleChange = (e) => {
@@ -45,6 +24,7 @@ const PostForm = () => {
     return ( 
         <Box
             component="form"
+            onSubmit={handleSubmit}
             sx={{
                 display: "flex",
                 flexDirection: "column",
