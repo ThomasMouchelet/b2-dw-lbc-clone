@@ -23,7 +23,7 @@ Ajouter la localisation pour chaque post (adresse, ville, code, postale, lat, ln
 
 ***Frontend :*** Formater les adresses avec Google Places API
 
-> Utilisation de Google Places API : [exemple](https://developers.google.com/maps/documentation/places/web-service/autocomplete?hl=fr)
+> Utilisation de Google Places API : [exemple](https://ride.readme.io/docs/google-place-autocomplete), [exemple2](https://developers.google.com/maps/documentation/javascript/examples/places-autocomplete)
 
 | Parameter | Type     |
 | :-------- | :------- |
