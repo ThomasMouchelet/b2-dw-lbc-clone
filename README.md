@@ -32,21 +32,11 @@ Ajouter la localisation pour chaque post (adresse, ville, code, postale, lat, ln
 | `route` | `string` |
 | `city` | `string` |
 | `administrative_area_level_1` | `string` |
-| `administrative_area_level_1` | `string` |
 | `administrative_area_level_2` | `string` |
 | `country` | `string` |
 | `postal_code` | `string` |
 
-```html
-<script async src="https://www.googletagmanager.com/gtag/js?id=SECRET_KEY"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
 
-    gtag('config', 'SECRET_KEY');
-</script>
-```
 # TODO V5
 
 ***Frontend :***
@@ -73,7 +63,7 @@ Step form :
 # TODO V8
 
 ***Frontend :***
-Sur la page d'accueil, ajouter un bar de recherche pour filtrer les posts en fonction de l'adresse.
+Sur la page d'accueil, ajouter une barre de recherche pour filtrer les posts en fonction de l'adresse.
 
 ***Backend :***
 Création d'un filtre sur la route "/posts" pour filtrer les posts en fonction de la location.
