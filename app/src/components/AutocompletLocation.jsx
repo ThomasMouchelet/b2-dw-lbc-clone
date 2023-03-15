@@ -1,4 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
+import TextField from '@mui/material/TextField';
+import Autocomplete from '@mui/material/Autocomplete';
 
 
 const AutocompleteInput = () => {
@@ -40,14 +42,22 @@ const AutocompleteInput = () => {
 
   return (
     <>
-      <input
+      <Autocomplete        
+        id="autocomplete-input"
+        options={[]}
+        value={address}
+        onChange={handleInputChange}
+        ref={autocompleteRef}
+        renderInput={(params) => <TextField {...params} label="Enter an address" />}
+      />
+      {/* <input
         id="autocomplete-input"
         type="text"
         placeholder="Enter an address"
         value={address}
         onChange={handleInputChange}
         ref={autocompleteRef}
-      />
+      /> */}
     </>
   );
 };

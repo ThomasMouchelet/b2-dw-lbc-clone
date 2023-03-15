@@ -52,6 +52,7 @@ Adapter l'upload des images en fonction du design (webdesign/upload-form.mov) :
 - Possibilité de supprimer des images
 - Peut importe le nombre d'image upload, le nombre de carré ne change pas.
 - Les images upload sont situé dans les premiers carrés.
+- Lors de l'uploade, les images se cumulent. S'il a un uplaod de 1 image alors que deux images étaient déjà présentes alors il y aura trois images dans le Drop zone.
 
 > Pour le delete des images dans le dropZone : [e.stopPropagation()](https://developer.mozilla.org/en-US/docs/Web/API/Event/stopPropagation)
 # TODO V7
