@@ -75,3 +75,15 @@ Création d'un filtre sur la route "/posts" pour filtrer les posts en fonction d
 ```http
 GET /posts?lat=45.09484&lng=-0.030904
 ```
+
+# TODO V9
+
+***Frontend :***
+Update post. Possibilité de mettre à jour les champs texte mais également les images. L'ensemble du formulaire doit être prérempli, y compris les images.
+***Backend :***
+Update post
+
+# TODO V10
+
+***Frontend :***
+Géolocalisation : lorsque l'utilisateur charge la page il peut être géolocalisé et le lorsqu'il souhaite ajouter un post, l'input pour l'adresse est automatiquement rempli [documentation](https://www.w3schools.com/html/html5_geolocation.asp)

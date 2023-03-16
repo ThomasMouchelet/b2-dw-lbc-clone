@@ -1,6 +1,7 @@
 import { Box, Button, TextField } from "@mui/material";
 import { useState } from "react";
-import AutocompletLocation from "./AutocompletLocation";
+import AutocompletLocationBasic from "./AutocompletLocationBasic";
+import AutocompletLocationMui from "./AutocompletLocationMui";
 
 const PostForm = () => {
     const [credentials, setCredentials] = useState({})
@@ -47,7 +48,8 @@ const PostForm = () => {
                 name="content"
                 onChange={handleChange}
             />
-            <AutocompletLocation />
+            {/* <AutocompletLocationBasic /> */}
+            <AutocompletLocationMui />
             <Button
                 variant="contained"
                 type="submit"
